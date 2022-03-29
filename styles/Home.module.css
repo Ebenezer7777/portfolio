@@ -1,51 +1,40 @@
-.container {
-  padding: 0 2rem;
+.container
+{  
+    margin: 0 auto;
+    width: 80%;
+
 }
 
-.main {
-  min-height: 100vh;
-  padding: 4rem 0;
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+.center
+{
+    margin: 0 auto;
+}
+ 
+.animation_Bounce{
+  animation: bounce 1s infinite;
+
+} @keyframes bounce {
+  0%, 100% {
+    transform: translateY(-25%);
+    animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+  }
+  50% {
+    transform: translateY(0);
+    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  }
 }
 
-
-.description {
-  text-align: justify;
-  
-}
-
-.description {
-  margin: 4rem 0;
-  line-height: 1.5;
-  font-size: 1.5rem;
-  max-width: 1300px;
-}
-
-
-
-.grid {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  max-width: 1400px;
-}
 
 .card {
   margin: 1rem;
   padding: 1.5rem;
-  text-align: left;
   color: inherit;
   text-decoration: none;
   border: 1px solid #eaeaea;
   border-radius: 10px;
   transition: color 0.15s ease, border-color 0.15s ease;
   max-width: 300px;
-  height: 400px;
+  height: 300px;
   background-color: #17325E;
   display: flex;
   flex-direction: column;
@@ -60,25 +49,40 @@
   border-color: #16c9ff;
 }
 
-.card h2 {
-  margin: 0 0 1rem 0;
-  font-size: 1.5rem;
-}
 
-.card p {
-  margin: 0;
-  font-size: 1.25rem;
-  line-height: 1.5;
+.imageborder {
+  top: 30px;
+	width: 495px;
+	height: 280px;
+	background-color: #eee;
+	background-image: url('https://img-19.commentcamarche.net/WNCe54PoGxObY8PCXUxMGQ0Gwss=/480x270/smart/d8c10e7fd21a485c909a5b4c5d99e611/ccmcms-commentcamarche/20456790.jpg');
+	position: relative;
+	z-index: 1;
 }
+  .imageborder:after {
+		content: '';
+		position: absolute;
+		width: 480px;
+		height:270px;
+		left: 5px;
+		top: 5px;
+   
+  background-color: #00FFD1;
 
-.logo {
-  height: 1em;
-  margin-left: 0.5rem;
-}
+	}
+	
+	.mainimage {
+		position: relative;
+		left: 5px;
+		top: 5px;
 
-@media (max-width: 600px) {
-  .grid {
-    width: 100%;
-    flex-direction: column;
-  }
-}
+		background-position:  center;
+		z-index: 2;
+		transition: .5s cubic-bezier(.5,.03,.41,1);
+	}
+	
+  .mainimage:hover  {
+    color: #00FFD1;
+		transform: translate(-15px, -15px);
+		transition: .5s cubic-bezier(.5,.03,.41,1);
+	}

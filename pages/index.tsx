@@ -1,71 +1,98 @@
-import type { NextPage } from "next";
-import Head from "next/head";
-import Image from "next/image";
-import styles from "../styles/Home.module.css";
+import {
+  ActionIcon,
+  Button,
+  Center,
+  Collapse,
+  SimpleGrid,
+  Space,
+  Text,
+  Title,
+  useMantineTheme,
+} from '@mantine/core'
+import type { NextPage } from 'next'
+import Link from 'next/link'
+import { useState } from 'react'
+import { ChevronDown } from 'tabler-icons-react'
+import CardIndexList from '../components/cardListIndex'
+import styles from '../styles/Home.module.css'
 
 const Home: NextPage = () => {
+  const [opened, setOpen] = useState(false)
+  const theme = useMantineTheme()
   return (
-    <div className={styles.container}>
-      <Head>
-        <title>Portfolio de Eben</title>
-        <meta name="description" content="" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+    <>
+      <Space h={150} />
+      <div className={styles.container}>
+        <Title order={2}>Hey there</Title>
+        <Space h={10} />
+        <Title order={1}>My name is Ebenezer</Title>
+        <Space h={10} />
+        <Title order={2}>And i like build stuffs</Title>
+        <Space h={10} />
 
-      <main className={styles.main}>
-        <p className={styles.description}>
-          <div>
-            <h2>Hey there</h2>
-            <h1>My name is Ebenezer</h1>
-            <h2>And i like build stuffs</h2>
-          </div>
-          A soon-to-be computer science graduate, I am an aspiring (and broke)
-          software developer from France with a particular interest in building
-          things for the web. Currently in my final year, I am looking for
-          internship opportunities, though I do freelance from time to time.
-        </p>
+        <Center>
+          <Text size="xl">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere,
+            non. Nihil nobis perspiciatis facere sit voluptate delectus? Ipsum
+            hic quam enim placeat tempore consequuntur et earum, ab architecto,
+            illum atque. Lorem ipsum dolor, sit amet consectetur adipisicing
+            elit. Animi, eum nam veniam illum sequi praesentium incidunt ut,
+            reiciendis eius quas dolores quos provident? Saepe, rem maxime. Nemo
+            expedita dolores commodi, est animi eveniet dicta quos cupiditate,
+            voluptatum odio facilis nesciunt. Rerum fugit vitae mollitia ullam
+            molestias necessitatibus explicabo ducimus, cumque, et at temporibus
+            reiciendis in voluptatibus, voluptatem dolorem repellendus!
+            Voluptates blanditiis unde mollitia ullam repudiandae quia placeat
+            tempora iure voluptatum autem illum temporibus ex quas assumenda est
+            et, tempore consequatur provident! Ut at illum nemo fuga nobis,
+            repellendus illo incidunt repudiandae sequi atque, vitae minus
+            molestias reprehenderit eos assumenda minima.
+          </Text>
+        </Center>
+      </div>
+      <Space h={20} />
+      <Center>
+        <Text>Explorer</Text>
+      </Center>
+      <Center>
+        <Button
+          className={styles.animation_Bounce}
+          color={'#17325E'}
+          radius="xl"
+          onClick={() => setOpen((o) => !o)}
+        >
+          <ActionIcon>
+            <ChevronDown size={100} color={'#FFFF'} />
+          </ActionIcon>
+        </Button>
+      </Center>
+      <Space h={20} />
+      <Collapse
+        in={opened}
+        transitionDuration={1000}
+        transitionTimingFunction="ease-out"
+      >
+        <SimpleGrid
+          sx={{
+            display: 'flex',
+            flexWrap: 'wrap',
+            justifyContent: 'center',
+            alignItems: 'center',
+          }}
+          cols={4}
+          spacing="lg"
+          breakpoints={[
+            { maxWidth: 980, cols: 4, spacing: 'sm' },
+            { maxWidth: 800, cols: 3, spacing: 'sm' },
+            { maxWidth: 755, cols: 2, spacing: 'xs' },
+            { maxWidth: 500, cols: 2, spacing: 'xs' },
+          ]}
+        >
+          <CardIndexList />
+        </SimpleGrid>
+      </Collapse>
+    </>
+  )
+}
 
-        <div className={styles.grid}>
-          <a href="" className={styles.card}>
-            <Image
-              src="/about.png"
-              alt=""
-              width={250}
-              height={200}
-            />
-            <h2>About &rarr;</h2>
-          </a>
-          <a href="" className={styles.card}>
-            <Image
-              src="/project.png"
-              alt=""
-              width={250}
-              height={200}
-            />
-            <h2>Personal Project &rarr;</h2>
-          </a>
-          <a href="" className={styles.card}>
-            <Image
-              src="/skills.png"
-              alt="skills"
-              width={250}
-              height={200}
-            />
-            <h2>Skills &rarr;</h2>
-          </a>
-          <a href="h" className={styles.card}>
-            <Image
-              src="/contact.png"
-              alt=""
-              width={250}
-              height={200}
-            />
-            <h2>Contact &rarr;</h2>
-          </a>
-        </div>
-      </main>
-    </div>
-  );
-};
-
-export default Home;
+export default Home
