@@ -15,9 +15,9 @@ import styles from '../styles/Home.module.css'
 const Contact: NextPage = () => {
   return (
     <>
-      <Space h={150} />
+      <Space h={50} />
       <div className={styles.container}>
-        <Header />
+
         <Space h={80} />
         <Title order={1}>Get in Touch</Title>
         <Space h={20} />

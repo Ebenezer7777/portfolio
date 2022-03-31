@@ -86,3 +86,16 @@
 		transform: translate(-15px, -15px);
 		transition: .5s cubic-bezier(.5,.03,.41,1);
 	}
+
+
+
+  .fixed {
+    position: fixed;
+
+  }
+  
+  
+  
+
+  
+  

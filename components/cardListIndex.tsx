@@ -2,6 +2,7 @@ import { Space } from '@mantine/core'
 import { Pages } from '../models/pages'
 import CardIndex from './cardIndex'
 
+
 const CardIndexList = () => {
   return (
     <>

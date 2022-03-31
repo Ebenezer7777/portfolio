@@ -10,21 +10,21 @@ import {
 } from '@mantine/core'
 import { truncate } from 'fs/promises'
 import type { NextPage } from 'next'
-import Header from '../components/header'
+import Nav from '../components/header'
 import styles from '../styles/Home.module.css'
 
 const About: NextPage = (  ) => {
   return (
     <>
-      <Space h={150} />
+
       <div className={styles.container}>
-        <Header />
+     
         <Space h={80} />
         <Title order={1}>About</Title>
         <Space h={20} />
         <Grid>
           <Grid.Col md={6} lg={5}>
-            <Divider size="xl" color={'#636262'} />
+            <Divider size="xl" color={'#636262'}/>
           </Grid.Col>
         </Grid>
         <Space h={30} />

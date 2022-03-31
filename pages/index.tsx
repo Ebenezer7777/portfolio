@@ -10,7 +10,6 @@ import {
   useMantineTheme,
 } from '@mantine/core'
 import type { NextPage } from 'next'
-import Link from 'next/link'
 import { useState } from 'react'
 import { ChevronDown } from 'tabler-icons-react'
 import CardIndexList from '../components/cardListIndex'
@@ -21,7 +20,7 @@ const Home: NextPage = () => {
   const theme = useMantineTheme()
   return (
     <>
-      <Space h={150} />
+      <Space h={50} />
       <div className={styles.container}>
         <Title order={2}>Hey there</Title>
         <Space h={10} />
@@ -54,6 +53,7 @@ const Home: NextPage = () => {
       <Center>
         <Text>Explorer</Text>
       </Center>
+      <Space h={12} />
       <Center>
         <Button
           className={styles.animation_Bounce}
@@ -67,6 +67,7 @@ const Home: NextPage = () => {
         </Button>
       </Center>
       <Space h={20} />
+
       <Collapse
         in={opened}
         transitionDuration={1000}

@@ -7,9 +7,9 @@ import styles from '../styles/Home.module.css'
 const Skills: NextPage = () => {
   return (
     <>
-      <Space h={150} />
+      
       <div className={styles.container}>
-        <Header />
+
         <Space h={80} />
         <Title order={1}>My Skills</Title>
         <Space h={20} />
