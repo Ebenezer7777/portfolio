@@ -15,19 +15,24 @@ export const Projects = [
     Language: "Flutter"
   },
   {
-    name: "Djambo",
+    name: "    Portfolio",
+    description: "lorem ispum dolor consertuin ",
+    Language: "Next js"
+  },
+  {
+    name: "Restaurant",
     description: "lorem ispum dolor consertuin ",
     Language: "Flutter"
   },
   {
-    name: "Djambo",
+    name: "App accueil",
     description: "lorem ispum dolor consertuin ",
-    Language: "Flutter"
+    Language: "React Native"
   },
   {
-    name: "Djambo",
+    name: "Prest",
     description: "lorem ispum dolor consertuin ",
-    Language: "Flutter"
+    Language: "BOOTSTRAP"
   }
 ]
  

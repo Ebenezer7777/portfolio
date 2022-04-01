@@ -15,7 +15,7 @@ import styles from '../styles/Home.module.css'
 const Contact: NextPage = () => {
   return (
     <>
-      <Space h={50} />
+      <Space h={150} />
       <div className={styles.container}>
 
         <Space h={80} />
@@ -52,8 +52,9 @@ const Contact: NextPage = () => {
           <Link href="">
             <ActionIcon
               mx={50}
+              mb={50}
               radius={30}
-              size={200}
+              size={150}
               sx={(theme) => ({
                 backgroundColor: '#fff',
                 '&:hover': {
@@ -67,8 +68,9 @@ const Contact: NextPage = () => {
           <Link href="">
             <ActionIcon
               mx={50}
+              mb={50}
               radius={30}
-              size={200}
+              size={150}
               sx={(theme) => ({
                 backgroundColor: '#fff',
                 '&:hover': {
@@ -82,8 +84,9 @@ const Contact: NextPage = () => {
           <Link href="">
             <ActionIcon
               mx={50}
+              mb={50}
               radius={30}
-              size={200}
+              size={150}
               sx={(theme) => ({
                 backgroundColor: '#fff',
                 '&:hover': {

@@ -8,23 +8,20 @@ import {
   Title,
   Transition,
 } from '@mantine/core'
-import { truncate } from 'fs/promises'
 import type { NextPage } from 'next'
-import Nav from '../components/header'
 import styles from '../styles/Home.module.css'
 
-const About: NextPage = (  ) => {
+const About: NextPage = () => {
   return (
     <>
-
+      <Space h={150} />
       <div className={styles.container}>
-     
         <Space h={80} />
         <Title order={1}>About</Title>
         <Space h={20} />
         <Grid>
-          <Grid.Col md={6} lg={5}>
-            <Divider size="xl" color={'#636262'}/>
+          <Grid.Col md={12} lg={6}>
+            <Divider size="xl" color={'#636262'} />
           </Grid.Col>
         </Grid>
         <Space h={30} />
@@ -38,7 +35,7 @@ const About: NextPage = (  ) => {
             >
               {(styles) => (
                 <div>
-                  <Text ml={30} align="justify">
+                  <Text align="justify">
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                     Maiores placeat quod aperiam sunt beatae sed qui numquam
                     velit fugiat blanditiis, maxime accusamus, rerum est amet
@@ -87,7 +84,7 @@ const About: NextPage = (  ) => {
               )}
             </Transition>
           </Grid.Col>
-          <Grid.Col md={6} lg={6}>
+          <Grid.Col md={12} lg={6}>
             <Center>
               <div className={styles.imageborder}>
                 <Image

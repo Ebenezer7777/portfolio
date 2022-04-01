@@ -1,16 +1,13 @@
 import { Divider, Grid, SimpleGrid, Space, Text, Title } from '@mantine/core'
 import type { NextPage } from 'next'
-import FrameList from '../components/frameworkList'
-import Header from '../components/header'
 import CodingList from '../components/codingList'
+import FrameList from '../components/frameworkList'
 import styles from '../styles/Home.module.css'
 const Skills: NextPage = () => {
   return (
     <>
-      
+      <Space h={200} />
       <div className={styles.container}>
-
-        <Space h={80} />
         <Title order={1}>My Skills</Title>
         <Space h={20} />
         <Grid>
@@ -52,19 +49,19 @@ const Skills: NextPage = () => {
         </Title>
         <Space h={30} />
         <SimpleGrid
-        sx={{
-          display: 'flex',
-          flexWrap: 'wrap',
-          justifyContent: 'center',
-          alignItems: 'center',
-        }}
+          sx={{
+            display: 'flex',
+            flexWrap: 'wrap',
+            justifyContent: 'center',
+            alignItems: 'center',
+          }}
           cols={4}
-          spacing="lg"
+          spacing="md"
           breakpoints={[
-            { maxWidth: 980, cols: 4 , spacing: 'sm' },
-            { maxWidth: 800, cols: 3 , spacing: 'sm' },
-            { maxWidth: 755, cols: 2 , spacing: 'xs' },
-            { maxWidth: 500, cols: 1 , spacing: 'xs' },
+            { maxWidth: 980, cols: 5, spacing: 'sm' },
+            { maxWidth: 800, cols: 3, spacing: 'sm' },
+            { maxWidth: 755, cols: 2, spacing: 'xs' },
+            { maxWidth: 500, cols: 1, spacing: 'xs' },
           ]}
         >
           <CodingList />

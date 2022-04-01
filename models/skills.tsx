@@ -13,14 +13,15 @@ export const Skills = [
 ]
  
 export const Frameworks = [
-  { name: "React Native", level: 90 },
-  { name: "Flutter", level: 60 },
+  { name: "React Native", level: 60 },
+  { name: "Flutter", level: 70 },
   { name: "Next js", level: 80 },  
   { name: "TypeScript", level: 85 },
   { name: "Node js", level: 70 },
   { name: "MongoDB", level: 90 },
   { name: "Express", level: 80 },
-  { name: "Firebase", level: 80 },
+  { name: "Firebase", level: 60 },
+  { name: "Posgrest", level: 80}
 
 ]
 

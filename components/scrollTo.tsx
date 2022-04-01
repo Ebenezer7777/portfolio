@@ -11,8 +11,6 @@ const ScrollTo = () => {
         <Transition transition="slide-up" mounted={scroll.y > 0}>
           {(transitionStyles) => (
             <Button
-              
-
               style={transitionStyles}
               onClick={() => scrollTo({ y: 0 })}
             >
