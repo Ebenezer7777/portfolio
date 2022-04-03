@@ -5,20 +5,17 @@ import {
   Text,
   ThemeIcon,
   Title,
-  useMantineTheme
-} from '@mantine/core';
-import Link from 'next/link';
-import { BrandGithub } from 'tabler-icons-react';
-
-
+  useMantineTheme,
+} from '@mantine/core'
+import Link from 'next/link'
+import { BrandGithub } from 'tabler-icons-react'
 
 interface projectProps {
-  titre: string;
-  description: string;
-  language: string;
+  name: string
+  description: string
+  language: string
+  href: string
 }
-
-
 
 const Cards = (props: projectProps) => {
   const theme = useMantineTheme()
@@ -31,17 +28,16 @@ const Cards = (props: projectProps) => {
         style={{ textAlign: 'center' }}
         shadow="sm"
         p="lg"
-        sx={(theme) => ({
+        sx={() => ({
           backgroundColor: '#17325E',
           '&:hover': {
-            backgroundColor: theme.colors.cyan[2],
+            backgroundColor: 'none',
           },
         })}
       >
         <Title order={3} style={{ color: secondaryColor, lineHeight: 1.5 }}>
-          {props.titre}
+          {props.name}
         </Title>
-
         <Text size="sm" style={{ color: '#fff', lineHeight: 1.5 }}>
           {props.description}
         </Text>
@@ -49,18 +45,18 @@ const Cards = (props: projectProps) => {
         <Divider size="sm" color={'#636262'} />
         <Space h={30} />
         <Title order={3} color={'#636262'} style={{ lineHeight: 1.5 }}>
-         {props.language}
+          {props.language}
         </Title>
         <Space h={30} />
         <Card.Section>
-          <Link href="">
+          <Link href={props.href} passHref>
             <ThemeIcon
-              radius={'xl'}
+              radius={'md'}
               size={50}
-              sx={(theme) => ({
+              sx={() => ({
                 backgroundColor: '#636262',
                 '&:hover': {
-                  backgroundColor: 'none',
+                  backgroundColor: '#00FFD1',
                 },
               })}
             >

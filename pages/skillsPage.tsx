@@ -6,9 +6,9 @@ import styles from '../styles/Home.module.css'
 const Skills: NextPage = () => {
   return (
     <>
-      <Space h={200} />
+      <Space h={150} />
       <div className={styles.container}>
-        <Title order={1}>My Skills</Title>
+        <Title  order={1}>My Skills</Title>
         <Space h={20} />
         <Grid>
           <Grid.Col md={6} lg={5}>

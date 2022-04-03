@@ -8,9 +8,10 @@ const CardList = () => {
       {Projects.map((project, index) => (
         <Cards
           key={index}
-          titre={project.name}
+          name={project.name}
           description={project.description}
           language={project.Language}
+          href={project.Href}
         />
       ))}
       <Space h={30} />

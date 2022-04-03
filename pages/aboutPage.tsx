@@ -1,103 +1,105 @@
-import {
-  Center,
-  Divider,
-  Grid,
-  Image,
-  Space,
-  Text,
-  Title,
-  Transition,
-} from '@mantine/core'
+/* eslint-disable react/no-unescaped-entities */
+import { Center, Divider, Grid, Image, Space, Text, Title } from '@mantine/core'
+import { useMediaQuery } from '@mantine/hooks'
 import type { NextPage } from 'next'
 import styles from '../styles/Home.module.css'
 
 const About: NextPage = () => {
+  const mobile = useMediaQuery('(max-width: 866px)')
   return (
     <>
       <Space h={150} />
+
       <div className={styles.container}>
-        <Space h={80} />
-        <Title order={1}>About</Title>
+        <Title order={1}>About Me</Title>
         <Space h={20} />
         <Grid>
-          <Grid.Col md={12} lg={6}>
+          <Grid.Col md={6} lg={6}>
             <Divider size="xl" color={'#636262'} />
           </Grid.Col>
         </Grid>
         <Space h={30} />
-        <Grid>
-          <Grid.Col md={6} lg={6}>
-            <Transition
-              mounted={true}
-              transition="fade"
-              duration={4000}
-              timingFunction="ease"
-            >
-              {(styles) => (
-                <div>
-                  <Text align="justify">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                    Maiores placeat quod aperiam sunt beatae sed qui numquam
-                    velit fugiat blanditiis, maxime accusamus, rerum est amet
-                    quas dolorum ea! Mollitia aliquid nostrum laborum soluta
-                    alias cupiditate iste doloremque nobis voluptate.
-                    Aspernatur, sunt voluptatum. Enim perspiciatis architecto
-                    provident repellat. Quae optio aspernatur eius repudiandae,
-                    aut est distinctio commodi, error dolorum amet, harum
-                    consequatur! Aliquid minima cupiditate deleniti deserunt
-                    quisquam veritatis ab quos? Molestias eum ipsa numquam
-                    assumenda non, atque similique amet temporibus ab quam
-                    magnam id ea. Libero odio dicta nostrum. Quaerat assumenda
-                    placeat expedita adipisci pariatur. Rem sed, ipsam at rerum
-                    unde, nesciunt delectus, excepturi incidunt recusandae
-                    dolorum eveniet? Hic incidunt molestiae, ut, quos laudantium
-                    corrupti nulla laborum saepe rem cum, maxime quia
-                    reprehenderit quod? Ipsum corporis, saepe sunt rerum
-                    temporibus, totam quia, aperiam velit ipsam sequi alias. Sit
-                    totam impedit ipsa consequuntur deserunt animi perferendis!
-                    Libero excepturi perspiciatis officia quis soluta nemo
-                    accusamus impedit magnam asperiores earum quisquam repellat
-                    facere illo nesciunt voluptates, pariatur eos quia nostrum
-                    voluptatibus, architecto quam dicta molestias itaque saepe!
-                    Officia asperiores maiores veritatis ipsam qui corporis,
-                    cupiditate similique nulla magni ab dolores, cum provident,
-                    nostrum numquam in ullam omnis a sit odio harum earum.
-                    Quisquam, a. Tempora obcaecati perferendis ab quasi, minus
-                    assumenda esse distinctio doloribus eaque nobis tempore,
-                    molestiae libero deserunt molestias quae aut aspernatur
-                    facilis sed, explicabo aliquam commodi autem officiis
-                    impedit? Nam aperiam error nulla blanditiis perspiciatis
-                    autem molestiae cupiditate esse, distinctio eos eveniet illo
-                    pariatur! Enim, explicabo iure? Dolor velit hic temporibus
-                    facere labore fugit harum eos nemo aut molestias cupiditate
-                    quasi incidunt asperiores, necessitatibus optio dicta
-                    doloribus laboriosam cumque adipisci recusandae minus.
-                    Doloribus tenetur, nulla dolorum ab commodi consequuntur
-                    mollitia. Praesentium, vero similique saepe culpa itaque
-                    porro quas officiis numquam, autem adipisci dignissimos
-                    minima perspiciatis, quaerat quisquam nulla dolor voluptatem
-                    eum quibusdam quod ea temporibus. Accusantium distinctio
-                    cupiditate aut ipsum quae modi minus dignissimos nostrum eos
-                    similique? Vitae nam sequi ad animi fu
-                  </Text>
-                </div>
-              )}
-            </Transition>
-          </Grid.Col>
-          <Grid.Col md={12} lg={6}>
-            <Center>
-              <div className={styles.imageborder}>
+        {mobile ? (
+          <Grid justify={'center'}>
+            <Grid.Col>
+              <Center>
                 <Image
-                  className={styles.mainimage}
-                  width={480}
+                  radius={10}
                   height={270}
                   alt="Photo Eben"
                   src="https://img-19.commentcamarche.net/WNCe54PoGxObY8PCXUxMGQ0Gwss=/480x270/smart/d8c10e7fd21a485c909a5b4c5d99e611/ccmcms-commentcamarche/20456790.jpg"
                 />
-              </div>
-            </Center>
-          </Grid.Col>
-        </Grid>
+              </Center>
+            </Grid.Col>
+
+            <Grid.Col>
+              <Text align="justify">
+                my name is Ebenezer Lassem Abdoulaye, and my name is either
+                Eben. I love creating objects that live on the internet, with a
+                particular interest in interaction designs and user experience.
+              </Text>
+              <Space h={30} />
+              <Text align="justify">
+                Born and raised in a small village in western Cameroon, I came
+                to France about 2 years ago thanks to a competition that allowed
+                me to continue my higher education. Currently a first-year
+                engineering student at ENSIM, I have developed a deep interest
+                in building web applications, and I am currently preparing
+                myself before entering the tech scene.
+              </Text>
+              <Space h={30} />
+              <Text align="justify">
+                I like to build stuff! Whether it's software, web or mobile
+                applications, I strive to always apply engineering best
+                practices in my work and create meaningful products that deliver
+                powerful experiences. Well-organized and independent person with
+                great attention to detail, I look forward to working on
+                interesting and challenging projects with positive people!
+              </Text>
+            </Grid.Col>
+          </Grid>
+        ) : (
+          <Grid>
+            <Grid.Col span={6}>
+              <Text >
+                my name is Ebenezer Lassem Abdoulaye, and my name is either
+                Eben. I love creating objects that live on the internet, with a
+                particular interest in interaction designs and user experience.
+              </Text>
+              <Space h={30} />
+              <Text >
+                Born and raised in a small village in western Cameroon, I came
+                to France about 2 years ago thanks to a competition that allowed
+                me to continue my higher education. Currently a first-year
+                engineering student at ENSIM, I have developed a deep interest
+                in building web applications, and I am currently preparing
+                myself before entering the tech scene.
+              </Text>
+              <Space h={30} />
+              <Text>
+                I like to build stuff! Whether it's software, web or mobile
+                applications, I strive to always apply engineering best
+                practices in my work and create meaningful products that deliver
+                powerful experiences. Well-organized and independent person with
+                great attention to detail, I look forward to working on
+                interesting and challenging projects with positive people!
+              </Text>
+            </Grid.Col>
+            <Grid.Col span={6}>
+              <Center>
+                <div className={styles.imageborder}>
+                  <Image
+                    className={styles.mainimage}
+                    width={480}
+                    height={270}
+                    alt="Photo Eben"
+                    src="https://img-19.commentcamarche.net/WNCe54PoGxObY8PCXUxMGQ0Gwss=/480x270/smart/d8c10e7fd21a485c909a5b4c5d99e611/ccmcms-commentcamarche/20456790.jpg"
+                  />
+                </div>
+              </Center>
+            </Grid.Col>
+          </Grid>
+        )}
       </div>
     </>
   )

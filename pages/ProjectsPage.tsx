@@ -6,11 +6,10 @@ import styles from '../styles/Home.module.css'
 
 const ProjectList: NextPage = () => {
   return (
-    <ScrollArea style={{ height: 1000 }} scrollbarSize={2}>
+    <>
       <Space h={150} />
       <div className={styles.container}>
-  
-        <Space h={80} />
+
         <Title order={1}>My Experience</Title>
         <Space h={20} />
         <Grid>
@@ -41,7 +40,7 @@ const ProjectList: NextPage = () => {
         </SimpleGrid>
       </div>
       <Space h={80} />
-    </ScrollArea>
+    </>
   )
 }
 
