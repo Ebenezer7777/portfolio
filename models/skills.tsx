@@ -19,7 +19,6 @@ export const Frameworks = [
   { name: "TypeScript", level: 85 },
   { name: "Node js", level: 70 },
   { name: "MongoDB", level: 90 },
-  { name: "Express", level: 80 },
   { name: "Firebase", level: 60 },
   { name: "Posgrest", level: 80}
 
