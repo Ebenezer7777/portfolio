@@ -8,7 +8,7 @@ const Skills: NextPage = () => {
     <>
       <Space h={150} />
       <div className={styles.container}>
-        <Title  order={1}>My Skills</Title>
+        <Title order={1}>My Skills</Title>
         <Space h={20} />
         <Grid>
           <Grid.Col md={6} lg={5}>
@@ -16,11 +16,11 @@ const Skills: NextPage = () => {
           </Grid.Col>
         </Grid>
         <Space h={30} />
-        <Text>Here are some of the technologies that I am working </Text>
+        <Text>Here are some of the technologies that I am using. </Text>
 
         <Space h={30} />
         <Title mx={10} color="#00FFD1" order={2}>
-          Framework
+          Frameworks/Tools
         </Title>
         <Space h={30} />
 

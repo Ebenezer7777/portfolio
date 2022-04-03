@@ -44,7 +44,7 @@ const Cards = (props: projectProps) => {
         <Space h={30} />
         <Divider size="sm" color={'#636262'} />
         <Space h={30} />
-        <Title order={3} color={'#636262'} style={{ lineHeight: 1.5 }}>
+        <Title order={4} style={{ color: '#fff', lineHeight: 1.5 }}>
           {props.language}
         </Title>
         <Space h={30} />

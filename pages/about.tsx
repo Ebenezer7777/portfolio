@@ -11,7 +11,7 @@ const About: NextPage = () => {
       <Space h={150} />
 
       <div className={styles.container}>
-        <Title order={1}>About Me</Title>
+        <Title order={1}>About me</Title>
         <Space h={20} />
         <Grid>
           <Grid.Col md={6} lg={6}>
@@ -34,40 +34,39 @@ const About: NextPage = () => {
 
             <Grid.Col>
               <Text align="justify">
-                my name is Ebenezer Lassem Abdoulaye, and my name is either
-                Eben. I love creating objects that live on the internet, with a
-                particular interest in interaction designs and user experience.
+                My name is Ebenezer but you can call me Eben. I love creating
+                stuffs that live on the internet, with a particular interest in
+                interactive design and user experience.
               </Text>
               <Space h={30} />
               <Text align="justify">
                 Born and raised in a small village in western Cameroon, I came
                 to France about 2 years ago thanks to a competition that allowed
-                me to continue my higher education. Currently a first-year
-                engineering student at ENSIM, I have developed a deep interest
-                in building web applications, and I am currently preparing
-                myself before entering the tech scene.
+                me to continue my higher education. Currently an engineering
+                freshman at ENSIM, I developed a deep interest in building web
+                applications, and I am currently preparing myself to do my entry
+                to the tech scene.
               </Text>
               <Space h={30} />
               <Text align="justify">
-                I like to build stuff! Whether it's software, web or mobile
-                applications, I strive to always apply engineering best
-                practices in my work and create meaningful products that deliver
-                powerful experiences. Well-organized and independent person with
-                great attention to detail, I look forward to working on
-                interesting and challenging projects with positive people!
+                Whether it's software, web or mobile application, I strive to
+                always apply best practices in my work to create amazing
+                products that brings value. Well-organized and autonomous with a
+                great attention to details, I am looking forward to work on
+                interesting and challenging projects with positive people.
               </Text>
             </Grid.Col>
           </Grid>
         ) : (
           <Grid>
             <Grid.Col span={6}>
-              <Text >
+              <Text>
                 my name is Ebenezer Lassem Abdoulaye, and my name is either
                 Eben. I love creating objects that live on the internet, with a
                 particular interest in interaction designs and user experience.
               </Text>
               <Space h={30} />
-              <Text >
+              <Text>
                 Born and raised in a small village in western Cameroon, I came
                 to France about 2 years ago thanks to a competition that allowed
                 me to continue my higher education. Currently a first-year

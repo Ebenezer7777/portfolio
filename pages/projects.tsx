@@ -1,7 +1,6 @@
-import { Divider, Grid, ScrollArea, SimpleGrid, Space, Text, Title } from '@mantine/core'
+import { Divider, Grid, SimpleGrid, Space, Text, Title } from '@mantine/core'
 import type { NextPage } from 'next'
 import CardList from '../components/cardList'
-import Header from '../components/header'
 import styles from '../styles/Home.module.css'
 
 const ProjectList: NextPage = () => {
@@ -9,7 +8,6 @@ const ProjectList: NextPage = () => {
     <>
       <Space h={150} />
       <div className={styles.container}>
-
         <Title order={1}>My Experience</Title>
         <Space h={20} />
         <Grid>
@@ -18,7 +16,7 @@ const ProjectList: NextPage = () => {
           </Grid.Col>
         </Grid>
         <Space h={30} />
-        <Text>Here are some of the technologies that I am working </Text>
+        <Text>Here are some projects i have been working on.</Text>
         <Space h={30} />
         <SimpleGrid
           sx={{

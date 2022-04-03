@@ -16,8 +16,8 @@ import styles from '../styles/Home.module.css'
 const Home: NextPage = () => {
   return (
     <>
-      <Space h={150} />
       <div className={styles.container}>
+        <Space h={150} />
         <Grid>
           <Grid.Col md={6} lg={5}>
             <Title order={2}>Hey there</Title>
@@ -30,16 +30,14 @@ const Home: NextPage = () => {
 
             <Center>
               <Text size="xl">
-                Soon to be a computer science graduate, I'm an aspiring (and
-                broke)  software developer  with a particular interest in
-                creating things for the web. Currently in the first year of the
-                engineering cycle, I am looking for work-study and internship
-                opportunities.
+                I'm an aspiring software engineer with a particular interest for
+                web development. Currently in the first year of my engineering
+                cycle, I am looking for work-study and internship opportunities.
               </Text>
             </Center>
             <Space h={15} />
             <Center>
-              <Blockquote style={{ color: '#fff' }} cite="– Forrest Gump">
+              <Blockquote style={{ color: '#fff' }} cite="– ">
                 Life is like an npm install – you never know what you are going
                 to get.
               </Blockquote>

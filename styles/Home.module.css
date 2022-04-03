@@ -56,11 +56,14 @@
   transform: translate(-15px, -15px);
   transition: .5s cubic-bezier(.5, .03, .41, 1);
 }
+.cursor {
+  cursor: pointer;
+}
 
 .fixed {
   position: fixed;
   top: 0;
-  left: 0;
+  left: 0;;
   right: 0;
   z-index: 2;
 }
@@ -98,6 +101,7 @@
   display: inline;
   position: relative;
   text-decoration: none;
+  cursor: pointer;
 
 }
 
