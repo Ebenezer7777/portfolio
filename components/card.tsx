@@ -9,6 +9,7 @@ import {
 } from '@mantine/core'
 import Link from 'next/link'
 import { BrandGithub } from 'tabler-icons-react'
+import styles from '../styles/Home.module.css'
 
 interface projectProps {
   name: string
@@ -26,6 +27,7 @@ const Cards = (props: projectProps) => {
     <div style={{ width: 340, margin: 'auto' }}>
       <Link href={props.href} passHref>
         <Card
+          className={styles.cursor}
           style={{ textAlign: 'center' }}
           shadow="sm"
           p="lg"
