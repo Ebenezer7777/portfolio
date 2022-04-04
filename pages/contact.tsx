@@ -118,7 +118,6 @@ const Contact: NextPage = () => {
           </Link>
         </SimpleGrid>
       </div>
-      <Space h={80} />
     </>
   )
 }

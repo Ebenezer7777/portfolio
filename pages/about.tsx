@@ -1,7 +1,17 @@
 /* eslint-disable react/no-unescaped-entities */
-import { Center, Divider, Grid, Image, Space, Text, Title } from '@mantine/core'
+import {
+  Button,
+  Center,
+  Divider,
+  Grid,
+  Image,
+  Space,
+  Text,
+  Title,
+} from '@mantine/core'
 import { useMediaQuery } from '@mantine/hooks'
 import type { NextPage } from 'next'
+import { FileDownload } from 'tabler-icons-react'
 import styles from '../styles/Home.module.css'
 
 const About: NextPage = () => {
@@ -22,13 +32,43 @@ const About: NextPage = () => {
         {mobile ? (
           <Grid justify={'center'}>
             <Grid.Col>
+              <Image
+                radius={10}
+                height={270}
+                alt="Photo Eben"
+                src="https://img-19.commentcamarche.net/WNCe54PoGxObY8PCXUxMGQ0Gwss=/480x270/smart/d8c10e7fd21a485c909a5b4c5d99e611/ccmcms-commentcamarche/20456790.jpg"
+              />
+              <Space h={20} />
               <Center>
-                <Image
-                  radius={10}
-                  height={270}
-                  alt="Photo Eben"
-                  src="https://img-19.commentcamarche.net/WNCe54PoGxObY8PCXUxMGQ0Gwss=/480x270/smart/d8c10e7fd21a485c909a5b4c5d99e611/ccmcms-commentcamarche/20456790.jpg"
-                />
+                <div>
+                  {' '}
+                  <Button
+                    component="a"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="/cv_Ebenezer.pdf"
+                    leftIcon={<FileDownload size={18} />}
+                    styles={(theme) => ({
+                      root: {
+                        backgroundColor: '#17325E',
+                        border: 0,
+                        height: 42,
+                        paddingLeft: 20,
+                        paddingRight: 20,
+
+                        '&:hover': {
+                          backgroundColor: theme.fn.darken('#17325E', 0.05),
+                        },
+                      },
+
+                      leftIcon: {
+                        marginRight: 15,
+                      },
+                    })}
+                  >
+                    Download CV
+                  </Button>
+                </div>
               </Center>
             </Grid.Col>
 
@@ -94,6 +134,38 @@ const About: NextPage = () => {
                     alt="Photo Eben"
                     src="https://img-19.commentcamarche.net/WNCe54PoGxObY8PCXUxMGQ0Gwss=/480x270/smart/d8c10e7fd21a485c909a5b4c5d99e611/ccmcms-commentcamarche/20456790.jpg"
                   />
+                </div>
+              </Center>
+              <Space h={50} />
+              <Center>
+                <div>
+                  {' '}
+                  <Button
+                    component="a"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="/cv_Ebenezer.pdf"
+                    leftIcon={<FileDownload size={18} />}
+                    styles={(theme) => ({
+                      root: {
+                        backgroundColor: '#17325E',
+                        border: 0,
+                        height: 42,
+                        paddingLeft: 20,
+                        paddingRight: 20,
+
+                        '&:hover': {
+                          backgroundColor: theme.fn.darken('#17325E', 0.05),
+                        },
+                      },
+
+                      leftIcon: {
+                        marginRight: 15,
+                      },
+                    })}
+                  >
+                    Download CV
+                  </Button>
                 </div>
               </Center>
             </Grid.Col>

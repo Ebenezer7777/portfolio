@@ -17,7 +17,7 @@ const Home: NextPage = () => {
   return (
     <>
       <div className={styles.container}>
-        <Space h={150} />
+        <Space h={130} />
         <Grid>
           <Grid.Col md={6} lg={5}>
             <Title order={2}>Hey there</Title>
@@ -25,7 +25,7 @@ const Home: NextPage = () => {
             <Space h={10} />
             <Title order={1}>My name is Ebenezer</Title>
             <Space h={10} />
-            <Title order={2}>And i like build stuffs</Title>
+            <Title order={2}>And i like building stuffs</Title>
             <Space h={10} />
 
             <Center>
@@ -137,7 +137,7 @@ const Home: NextPage = () => {
           </Grid.Col>
         </Grid>
       </div>
-      <Space h={80} />
+      <Space h={10} />
     </>
   )
 }

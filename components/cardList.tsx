@@ -1,6 +1,6 @@
 import { Space } from '@mantine/core'
-import Cards from './card'
 import { Projects } from '../models/projects'
+import Cards from './card'
 
 const CardList = () => {
   return (
@@ -13,7 +13,7 @@ const CardList = () => {
           language={project.Language}
           href={project.Href}
         />
-      ))}
+      ))}{' '}
       <Space h={30} />
     </>
   )
