@@ -1,10 +1,16 @@
 .container {
   margin: 0 auto;
   width: 80%;
+  color: #ffffff;
+
 }
 
 .center {
   margin: 0 auto;
+}
+
+.color {
+  color: #ffffff;
 }
 
 .content {
