@@ -28,6 +28,7 @@ const ProjectList: NextPage = () => {
   return (
     <>
       <Space h={150} />
+     
       <div className={styles.container}>
         <Title order={1}>My Experience</Title>
         <Space h={20} />
@@ -51,6 +52,7 @@ const ProjectList: NextPage = () => {
                   >
                     <Title order={4}>Personal Projects</Title>
                   </UnstyledButton>
+                  
                 ) : (
                   <UnstyledButton
                     onClick={() => setState(() => true)}
@@ -71,7 +73,7 @@ const ProjectList: NextPage = () => {
                   })}
                 />
               </Grid.Col>
-
+              <Space h={10}/>
               <Grid.Col span={3}>
                 {!state ? (
                   <UnstyledButton

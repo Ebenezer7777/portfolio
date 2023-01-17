@@ -30,7 +30,6 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
       }}
     >
       <Nav/>
-      <ScrollToTop/>
       <Transition>
         <Component {...pageProps} />
       </Transition>
