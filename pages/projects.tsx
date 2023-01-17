@@ -42,7 +42,7 @@ const ProjectList: NextPage = () => {
         <Grid justify="center" align="center">
           {mobile ? (
             <>
-              <Grid.Col span={3}>
+              <Grid.Col span={6}>
                 {state ? ( // if state is true then show this button  else hide it  (state is true by default)
                   <UnstyledButton
                     onClick={() => setState(() => true)}
@@ -73,8 +73,8 @@ const ProjectList: NextPage = () => {
                   })}
                 />
               </Grid.Col>
-              <Space h={10}/>
-              <Grid.Col span={3}>
+              <Space h={8}/>
+              <Grid.Col span={6}>
                 {!state ? (
                   <UnstyledButton
                     onClick={() => setState(() => false)}
