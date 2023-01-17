@@ -60,7 +60,7 @@ const Contact: NextPage = () => {
             >
               <div>
                 <PhoneCall size={100} color={'#000'} />
-                <Text weight={700}> +33 7 67 76 65 98</Text>
+                
               </div>
             </ActionIcon>
           </Link>

@@ -82,8 +82,8 @@ const About: NextPage = () => {
               <Text align="justify">
                 Born and raised in a small village in western Cameroon, I came
                 to France about 2 years ago thanks to a competition that allowed
-                me to continue my higher education. Currently an engineering
-                freshman at ENSIM, I developed a deep interest in building web
+                me to continue my higher education. Currently a second-year
+                engineering student at ENSIM, I developed a deep interest in building web
                 applications, and I am currently preparing myself to do my entry
                 to the tech scene.
               </Text>
@@ -108,8 +108,8 @@ const About: NextPage = () => {
               <Space h={30} />
               <Text>
                 Born and raised in a small village in western Cameroon, I came
-                to France about 2 years ago thanks to a competition that allowed
-                me to continue my higher education. Currently a first-year
+                to France about 3 years ago thanks to a competition that allowed
+                me to continue my higher education. Currently a second-year
                 engineering student at ENSIM, I have developed a deep interest
                 in building web applications, and I am currently preparing
                 myself before entering the tech scene.

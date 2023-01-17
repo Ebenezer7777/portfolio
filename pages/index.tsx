@@ -31,8 +31,8 @@ const Home: NextPage = () => {
             <Center>
               <Text size="xl">
                 I'm an aspiring software engineer with a particular interest for
-                web development. Currently in the first year of my engineering
-                cycle, I am looking for work-study and internship opportunities.
+                web development. Currently in the second year of my engineering
+                cycle, I am looking for internship opportunities.
               </Text>
             </Center>
             <Space h={15} />

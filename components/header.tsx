@@ -37,6 +37,7 @@ const Nav: React.FC = () => {
           backgroundColor:
             theme.colorScheme === 'dark' ? theme.colors.dark[5] : '#17325E',
         }}
+        ref={clickOutsideRef}
       >
         <Grid justify="center">
           {mobile ? (
