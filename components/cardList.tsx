@@ -12,7 +12,6 @@ const CardList = () => {
           description={project.description}
           language={project.Language}
           href={project.Href}
-          image={project.image}
 
 
         />
