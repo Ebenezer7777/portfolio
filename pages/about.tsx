@@ -81,8 +81,8 @@ const About: NextPage = () => {
               <Space h={30} />
               <Text align="justify">
                 Born and raised in a small village in western Cameroon, I came
-                to France about 2 years ago thanks to a competition that allowed
-                me to continue my higher education. Currently a second-year
+                to France about 3 years ago thanks to a competition that allowed
+                me to continue my higher education. Currently a third-year
                 engineering student at ENSIM, I developed a deep interest in building web
                 applications, and I am currently preparing myself to do my entry
                 to the tech scene.
