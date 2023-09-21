@@ -170,8 +170,8 @@ const ProjectList: NextPage = () => {
               sx={{
                 display: 'flex',
                 flexWrap: 'wrap',
-                justifyContent: 'center',
-                alignItems: 'center',
+                justifyContent: 'flex-start', // 'flex-start' | 'center' | 'flex-end' | 'space-between' | 'space-around' | 'space-evenly
+              
               }}
               cols={4}
               spacing="lg"
