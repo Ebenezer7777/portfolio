@@ -26,7 +26,7 @@ const Cards = (props: projectProps) => {
     theme.colorScheme === 'dark' ? theme.colors.gray[7] : theme.colors.gray[0]
 
   return (
-    <div style={{ width: 340, margin: 'auto' }}>
+    <div style={{ width: 340 }}>
       <Link href={props.href} passHref>
         <Card
           className={styles.cursor}
@@ -87,7 +87,7 @@ const Cards = (props: projectProps) => {
           </Card.Section>
         </Card>
       </Link>
-      <Space h={30} />
+      
     </div>
   )
 }
