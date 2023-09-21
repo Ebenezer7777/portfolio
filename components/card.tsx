@@ -2,6 +2,7 @@ import {
   Card,
   Divider,
   Space,
+  Image,
   Text,
   ThemeIcon,
   Title,
@@ -16,6 +17,7 @@ interface projectProps {
   description: string
   language: string
   href: string
+  image: string
 }
 
 const Cards = (props: projectProps) => {
@@ -41,6 +43,22 @@ const Cards = (props: projectProps) => {
           <Title order={3} style={{ color: secondaryColor, lineHeight: 1.5 }}>
             {props.name}
           </Title>
+          <Space h={30} />
+          <Image
+            src={props.image}
+            alt="project"
+            height={200}
+            width={300}
+            radius="md"
+            sx={() => ({
+              backgroundColor: '#fff',
+              '&:hover': {
+                backgroundColor: '#00FFD1',
+              },
+            })}
+          />
+          <Space h={30} />
+          
           <Text size="sm" style={{ color: '#fff', lineHeight: 1.5 }}>
             {props.description}
           </Text>
