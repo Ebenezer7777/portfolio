@@ -171,7 +171,7 @@ const ProjectList: NextPage = () => {
                 display: 'flex',
                 flexWrap: 'wrap',
                 justifyContent: 'flex-start', // 'flex-start' | 'center' | 'flex-end' | 'space-between' | 'space-around' | 'space-evenly
-              
+                alignItems: 'center',
               }}
               cols={4}
               spacing="lg"
