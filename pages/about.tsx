@@ -13,6 +13,7 @@ import { useMediaQuery } from '@mantine/hooks'
 import type { NextPage } from 'next'
 import { FileDownload } from 'tabler-icons-react'
 import styles from '../styles/Home.module.css'
+import React from 'react'
 
 const About: NextPage = () => {
   const mobile = useMediaQuery('(max-width: 866px)')
