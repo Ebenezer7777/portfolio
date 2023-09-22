@@ -87,7 +87,7 @@ const About: NextPage = () => {
                 applications, and I am currently preparing myself to do my entry
                 to the tech scene.
               </Text>
-              <Space h={30,00} />
+              <Space h={30} />
               <Text align="justify">
                 Whether it's software, web or mobile application, I strive to
                 always apply best practices in my work to create amazing
