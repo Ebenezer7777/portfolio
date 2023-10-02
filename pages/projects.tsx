@@ -42,7 +42,7 @@ const ProjectList: NextPage = () => {
         <Grid justify="center" align="center">
           {mobile ? (
             <>
-              <Grid.Col span={3}>
+              <Grid.Col span={6}>
                 {state ? ( // if state is true then show this button  else hide it  (state is true by default)
                   <UnstyledButton
                     onClick={() => setState(() => true)}
@@ -50,7 +50,7 @@ const ProjectList: NextPage = () => {
                       color: '#00FFD1',
                     }}
                   >
-                    <Title order={4}>Personal Projects</Title>
+                    <Title order={3}>Projects</Title>
                   </UnstyledButton>
                   
                 ) : (
@@ -60,7 +60,7 @@ const ProjectList: NextPage = () => {
                       color: '#fff',
                     }}
                   >
-                    <Title order={4}>Personal Projects</Title>
+                    <Title order={3}>Projects</Title>
                   </UnstyledButton>
                 )}
                 <Divider
@@ -73,8 +73,8 @@ const ProjectList: NextPage = () => {
                   })}
                 />
               </Grid.Col>
-              <Space h={10}/>
-              <Grid.Col span={3}>
+              <Space h={8}/>
+              <Grid.Col span={6}>
                 {!state ? (
                   <UnstyledButton
                     onClick={() => setState(() => false)}
@@ -83,7 +83,7 @@ const ProjectList: NextPage = () => {
 
                     }}
                   >
-                    <Title order={4}>Work Experience</Title>
+                    <Title order={3}>Experience</Title>
                   </UnstyledButton>
                 ) : (
                   <UnstyledButton 
@@ -92,7 +92,7 @@ const ProjectList: NextPage = () => {
                       color: '#fff',
                     }}
                   >
-                    <Title order={4}>Work Experience</Title>
+                    <Title order={3}>Experience</Title>
                   </UnstyledButton>
                 )}
                 <Divider
@@ -170,8 +170,8 @@ const ProjectList: NextPage = () => {
               sx={{
                 display: 'flex',
                 flexWrap: 'wrap',
-                justifyContent: 'center',
-                alignItems: 'center',
+                justifyContent: 'center', // 'flex-start' | 'center' | 'flex-end' | 'space-between' | 'space-around' | 'space-evenly
+                alignItems: 'stretch', // 'stretch' | 'flex-start' | 'center' | 'flex-end' | 'baseline' 
               }}
               cols={4}
               spacing="lg"

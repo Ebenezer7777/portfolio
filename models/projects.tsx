@@ -1,5 +1,12 @@
 export const Projects = [
   {
+    name: 'ChattyBot',
+    description:
+      'Development of a program using the Telegram chatbot to respond to user requests, providing weather information and details about movies.',
+    Language: 'Java, Spring, Maven, API Rest, Postman',
+    Href: 'https://github.com/KarimElSamarji/POO_TP3-4.git ',
+  }, 
+  {
     name: 'Ludotheque',
     description:
       'Website for managing a toy library as part of a school project. A client part to reserve games and an admin part to add, update or delete a game.',
@@ -13,25 +20,20 @@ export const Projects = [
     Href: 'https://github.com/Ebenezer7777/Portfolio-Bootstrap ',
   },
   {
-    name: 'Djambo',
-    description:
-      'An implementation of a dice game. roll a dice and get a random number between 1 and 6',
-    Language: 'Flutter',
-    Href: 'https://github.com/Ebenezer7777',
-  },
-  {
     name: 'Portfolio',
     description:
       'A portfolio made with the Nextjs frontend framework and TypeScript.',
     Language: 'NextJS - TypeScript',
     Href: 'https://github.com/Ebenezer7777/portfolio.git',
   },
+
   {
-    name: 'Hamburger_App',
+    name: 'CarManager',
     description: 'Mobile application to buy Hamburgers',
     Language: 'Flutter',
-    Href: 'https://github.com/Ebenezer7777',
+    Href: 'https://github.com/Ebenezer7777/carmanager.git',
   },
+
   {
     name: 'FocusTime_App',
     description:
@@ -51,4 +53,25 @@ export const Projects = [
     Language: 'BOOTSTRAP',
     Href: 'https://github.com/Ebenezer7777/Prest.git',
   },
+  {
+    name: 'Leaderboard (Projet en équipe)',
+    description: "The goal of this project is to develop an online leaderboard to evaluate and compare the performance of machine learning models. ",
+    Language: 'Django',
+    Href: 'https://github.com/AxelVilleret/Projet-en-equipe.git ',
+  },
+  {
+    name: '24h du code (Projet en équipe)',
+    description: "This project was carried out as part of the 24H du Code competition, with the goal of developing artificial intelligence models to categorize, edit, and stylize photos related to the 24 Hours of Le Mans race, using textual descriptions for corrections.",
+    Language: 'Python',
+    Href: 'https://github.com/atsin2002/24h_code_IA.git ',
+  },
+  {
+    name: 'Conciergerie',
+    description: "Website for managing a concierge service as part of a school project. A client part to reserve a service and an admin part to add, update or delete a service.",
+    Language: 'PHP - JS -  MariaDB',
+    Href: 'https://github.com/Ebenezer7777/Conciergerie.git ',
+  },
+
+
+
 ]

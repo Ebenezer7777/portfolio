@@ -13,6 +13,7 @@ import { useMediaQuery } from '@mantine/hooks'
 import type { NextPage } from 'next'
 import { FileDownload } from 'tabler-icons-react'
 import styles from '../styles/Home.module.css'
+import React from 'react'
 
 const About: NextPage = () => {
   const mobile = useMediaQuery('(max-width: 866px)')
@@ -81,8 +82,8 @@ const About: NextPage = () => {
               <Space h={30} />
               <Text align="justify">
                 Born and raised in a small village in western Cameroon, I came
-                to France about 2 years ago thanks to a competition that allowed
-                me to continue my higher education. Currently a second-year
+                to France about 3 years ago thanks to a competition that allowed
+                me to continue my higher education. Currently a third-year
                 engineering student at ENSIM, I developed a deep interest in building web
                 applications, and I am currently preparing myself to do my entry
                 to the tech scene.
@@ -109,7 +110,7 @@ const About: NextPage = () => {
               <Text>
                 Born and raised in a small village in western Cameroon, I came
                 to France about 3 years ago thanks to a competition that allowed
-                me to continue my higher education. Currently a second-year
+                me to continue my higher education. Currently a third-year
                 engineering student at ENSIM, I have developed a deep interest
                 in building web applications, and I am currently preparing
                 myself before entering the tech scene.
