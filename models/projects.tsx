@@ -62,7 +62,7 @@ export const Projects = [
   {
     name: '24h du code (Projet en équipe)',
     description: "This project was carried out as part of the 24H du Code competition, with the goal of developing artificial intelligence models to categorize, edit, and stylize photos related to the 24 Hours of Le Mans race, using textual descriptions for corrections.",
-    Language: 'Python',
+    Language: 'Python,Django',
     Href: 'https://github.com/atsin2002/24h_code_IA.git ',
   },
   {
